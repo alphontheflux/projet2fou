@@ -1,14 +1,76 @@
+/* Global Styles */
 body {
-    padding: 2rem;
-    padding-right: 50%;
-}
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-element {
+    margin-bottom: 20px;
+    position: relative;
+    width: 300px;
+  }
+  
+  .input-element label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-element input {
+    width: 100%;
+    padding: 8px 40px 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
-.input-element {
+  #check-icon-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .check-icon {
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-}
+  }
+  
 
-button {
-    box-sizing: content-box;
-}
+  #sign-up-confirm {
+    display: flex;
+    box-sizing: border-box;
+    align-self: flex-end;
+    background-color: aqua;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 4px;
+    transition: left 0.3s ease-in-out;
+  }
+
+  #sign-up-confirm:hover {
+    background-color: blue;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }

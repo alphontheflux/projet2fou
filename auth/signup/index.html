@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/globals.css" />
+    <title>Paintamère</title>
+    <script src="index.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/globals.css">
-  <title>Paintamère</title>
-</head>
-
-<body>
-  <form action="">
-    <h1>Inscription</h1>
-    <div class="input-element">
-      <label for="name">Votre nom</label>
-      <input type="text" id="name">
+  <body>
+    <div class="form">
+      <h1>Inscription</h1>
+      <div class="input-element">
+        <label for="name">Votre nom</label>
+        <input type="text" id="name" placeholder="Entrez votre nom"/>
+      </div>
+      <div class="input-element">
+        <label for="email">Adresse Email</label>
+        <input type="text" id="email" placeholder="Entrez votre email"/>
+      </div>
+      <div class="input-element">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" placeholder="Entrez un mot de passe"/>
+      </div>
+      <div class="input-element">
+        <label for="confirm">Confirmation du mot de passe</label>
+        <div class="password-container">
+          <input type="password" id="confirm" placeholder="Confirmez votre mot de passe"/>
+          <div id="check-icon-container"></div>
+        </div>
+      </div>
+      <button type="submit" id="sign-up-confirm">Confirmer</button>
     </div>
-    <div class="input-element">
-      <label for="email">Email</label>
-      <input type="text" id="email">
-    </div>
-    <div class="input-element">
-      <label for="password">Mot de passe</label>
-      <input type="password" id="password">
-    </div>
-    <div class="input-element">
-      <label for="confirm">Confirmation du mot de passe</label>
-      <input type="password" id="confirm">
-    </div>
-    <button type="submit">Confirmer</button>
-  </form>
-
-</body>
-
+  </body>
 </html>
