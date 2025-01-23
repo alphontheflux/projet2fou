@@ -1,6 +1,5 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -17,8 +16,8 @@ body {
   
   .input-element {
     margin-bottom: 20px;
-    position: relative; /* Permet de positionner l'icône à l'intérieur de l'input */
-    width: 300px; /* Pour assurer que tous les inputs aient la même largeur */
+    position: relative;
+    width: 300px;
   }
   
   .input-element label {
@@ -28,19 +27,17 @@ body {
   
   .input-element input {
     width: 100%;
-    padding: 8px 40px 8px 8px; /* Padding à droite pour l'icône sans modifier la taille de l'input */
-    /* margin-top: 5px; */
+    padding: 8px 40px 8px 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Inclut le padding dans la largeur de l'input */
+    box-sizing: border-box;
   }
-  
-  /* Conteneur pour l'icône à droite de l'input */
+
   #check-icon-container {
     position: absolute;
-    top: 50%; /* Centrer verticalement l'icône */
-    right: 10px; /* Positionner l'icône à droite avec un petit écart */
-    transform: translateY(-50%); /* Centrer l'icône par rapport à l'input */
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
   }
   
   .check-icon {
@@ -49,12 +46,31 @@ body {
     height: 20px;
   }
   
-  /* Si tu veux que l'input de mot de passe soit aligné avec un autre champ (ex: confirmation) */
   .password-container {
     position: relative;
     display: flex;
-    align-items: center; /* Assurer que l'input et l'icône sont sur la même ligne */
+    align-items: center;
     justify-content: space-between;
     width: 100%;
   }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
   
+
+  #sign-up-confirm {
+    display: flex;
+    box-sizing: border-box;
+    align-self: flex-end;
+    background-color: aqua;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 4px;
+    transition: left 0.3s ease-in-out;
+  }
+
+  #sign-up-confirm:hover {
+    background-color: blue;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
