@@ -1,14 +1,60 @@
+/* Global Styles */
 body {
-    padding: 2rem;
-    padding-right: 50%;
-}
-
-.input-element {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-button {
-    box-sizing: content-box;
-}
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-element {
+    margin-bottom: 20px;
+    position: relative; /* Permet de positionner l'icône à l'intérieur de l'input */
+    width: 300px; /* Pour assurer que tous les inputs aient la même largeur */
+  }
+  
+  .input-element label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-element input {
+    width: 100%;
+    padding: 8px 40px 8px 8px; /* Padding à droite pour l'icône sans modifier la taille de l'input */
+    /* margin-top: 5px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclut le padding dans la largeur de l'input */
+  }
+  
+  /* Conteneur pour l'icône à droite de l'input */
+  #check-icon-container {
+    position: absolute;
+    top: 50%; /* Centrer verticalement l'icône */
+    right: 10px; /* Positionner l'icône à droite avec un petit écart */
+    transform: translateY(-50%); /* Centrer l'icône par rapport à l'input */
+  }
+  
+  .check-icon {
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Si tu veux que l'input de mot de passe soit aligné avec un autre champ (ex: confirmation) */
+  .password-container {
+    position: relative;
+    display: flex;
+    align-items: center; /* Assurer que l'input et l'icône sont sur la même ligne */
+    justify-content: space-between;
+    width: 100%;
+  }
+  
