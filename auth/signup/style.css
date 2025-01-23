@@ -1,0 +1,14 @@
+body {
+    padding: 2rem;
+    padding-right: 50%;
+}
+
+.input-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+button {
+    box-sizing: content-box;
+}
